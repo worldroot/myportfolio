@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">A propos</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experience.html">Expérience Professionelle</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header -->
+        <header class="masthead">
+                <img  src="mehdi.jpg" alt="Mehdi"  width="300" height="300">
+                    <h1 class="text-uppercase">
+                      <strong>Qui suis je ?</strong>
+                    </h1>
+                    <hr>
+                    <div class="col-lg-8 mx-auto">
+                    <p class="text-faded mb-5">
+                    Un jeune Tunisien passioné des nouvelles technologies , j'aime apprendre des nouveaux languages de programmation, développer des nouveaux projets ,rencontrer des nouvelles personnes etc...</p>
+                    <a class="button" href="#about" onclick="typeWriter()" >Me connaitre plus cliquer ici...</a>
+                    <br></br>
+                </div>
+                      <p class=""" id="text"> </p>
+        </header>
+       
+        
+        
+
+
+        <script>
+          var i = 0;
+          var txt = 'Since my young age I was sitting all the time in front of a computer, since now nothing changed but i am living my Passion : Graduated with the Tunisian baccalaureat and French baccalaureat , I am Currently studying Computer Ingeneering in Esprit School of engineer in Tunisia, learning new skills each week and building new projects each year!!';
+          var speed = 35;
+          
+          function typeWriter() {
+            if (i < txt.length) {
+              document.getElementById("text").innerHTML += txt.charAt(i);
+              i++;
+              setTimeout(typeWriter, speed);
+            }
+          }
+          </script>
+
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
